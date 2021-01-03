@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>供应商管理</title>
+    <link rel="stylesheet"  type="text/css" href="css/providerManage.css">
+    <link rel="stylesheet"  type="text/css" href="css/font-awesome.css">
+    <style type="text/css">
+        body{
+            background:#fff url("images/背景图 (1).jpg") no-repeat left top;
+            background-size:100%;
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+<div class="header_area">
+    <ul class="menu-list">
+        <li><a href="/GoodsBasicInfoServlet">商品信息管理</a></li>
+        <li><a href="/stock/OrderServlet">商品出入库管理</a></li>
+        <li><a href="/stock/ProviderServlet">供应商管理</a></li>
+        <li><a href="/UserChangePasswordServlet">修改密码</a></li>
+    </ul>
+</div>
+<div class="table-area">
+    <form action="" method="get">
+        <input type="text" name="search"/>
+        <button >搜索<i class="fa fa-search"></i></button>
+
+        <input type="button" value="添加" name="addButton"/>
+
+        <table border="1px" cellspacing="0"  cellpadding="5" align="center">
+            <thead>
+            <td width="140px">供应商编号</td>
+            <td>供应商名称</td>
+            <td>供应商地址</td>
+            <td>供应商电话</td>
+            <td>操作</td>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+<!--                    <input type="button" value="修改" naem="updateButton"/>-->
+<!--                    <input type="button" value="删除" naem="deleteButton"/>-->
+                    <a href="/stock/UpdateProviderBasicInfoServlet?providerId=${provider.providerId}" onclick="Location.reload()">修改<i class="fa fa-pencil"></i></a>
+                    <a href="/stock/DelProviderServlet?providerId=${provider.providerId}" onclick="Location.reload()" >删除<i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+</body>
+</html>

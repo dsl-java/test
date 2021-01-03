@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.content-area{
+    *border: solid 1px red;
+    margin-top: 80px;
+}
+.content-area .form_area{
+    width: 300px;
+    margin: auto;
+    *border: solid 1px red;
+}
+.content-area .form_area .table-area{
+    border: solid 1px #EEEEEE;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    width: 300px;
+    height: 280px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.content-area .form_area input{
+    outline: none;
+    height: 25px;
+}
+
+.content-area .form_area .button_area{
+    width:300px;
+    margin: auto;
+}
+
+.content-area .form_area .button_area>input{
+    color: green;
+    width:100px;
+    height: 30px;
+    margin-left: 100px;
+}
+
+.content-area .form_area .table-area .he{
+    height: 30px;
+}

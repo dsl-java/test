@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header_area{
+    *border: solid 1px saddlebrown;
+    background-color: rgba(0,160,233,0.8);
+}
+.header_area .menu-list{
+    *border:solid 1px green;
+    width: 640px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header_area .menu-list>li{
+    margin-top: 20px;
+    margin-right: 68px;
+    display: inline-block;
+}
+.header_area .menu-list li>a{
+    color: white;
+}
+.header_area .menu-list li>a:hover{
+    color: black;
+}
+.header_area .menu-list li:nth-child(3)>a{
+    color: red;
+}
+
+.table-area input{
+    outline: none;
+}
+
+.table-area form table{
+    margin-top: 1px;
+}
+
+.table-area{
+    background-color: rgba(255,255,255,0.8);
+    margin: auto;
+    width:760px;
+    border-radius: 10px;
+    height: 600px;
+}
+.table-area form{
+    margin-top: 40px;
+}
+.table-area form table td{
+    width: 140px;
+}
+
+.table-area a:first-child{
+    color:green;
+}
+.table-area a:last-child{
+    color: red;
+}
+
+.table-area button{
+    width: 80px;
+    height: 35px;
+    background-color: #00A0E9;
+}
+
+.table-area input{
+    width: 80px;
+    height: 35px;
+}
+
+.table-area input:first-child{
+    width: 200px;
+}
+
+.table-area input:last-child{
+    background-color: antiquewhite;
+}

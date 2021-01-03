@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品出入库管理</title>
+    <link rel="stylesheet"  type="text/css" href="css/ordersManage.css">
+    <link rel="stylesheet"  type="text/css" href="css/font-awesome.css">
+    <style type="text/css">
+        body{
+            background:#fff url("images/背景图 (1).jpg") no-repeat left top;
+            background-size:100%;
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+<div class="header_area">
+    <ul class="menu-list">
+        <li><a href="/stock/GoodsBasicInfoServlet">商品信息管理</a></li>
+        <li><a href="/stock/OrderServlet">商品出入库管理</a></li>
+        <li><a href="/stock/ProviderServlet">供应商管理</a></li>
+        <li><a href="/stock/UserChangePasswordServlet">修改密码</a></li>
+    </ul>
+</div>
+<div class="table-area">
+    <form action="" method="get">
+        <input type="text" name="search"/>
+        <button >搜索<i class="fa fa-search"></i></button>
+        <input type="button" value="添加" name="addButton" />
+
+        <table border="1px" cellspacing="0"  cellpadding="5" align="center">
+            <thead>
+            <td>订单号</td>
+            <td>订单类型</td>
+            <td>交易人</td>
+            <td>订购商品编号</td>
+            <td>订单数量</td>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+</body>
+</html>
